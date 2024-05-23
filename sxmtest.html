@@ -22,20 +22,16 @@
       <div id="app" class="app-root">
         <div id="room-test" class="content-view show">
           <span class="sxm-test-title">Scape X Mobile</span>
-
           <div class="centered">
-            <form>
-              <label class="input-label">
-                Enter test room
-              </label>
-                <input id="room_id_input" class="room-input" type="text" value="sxmtest"/>
-            </form>
+            <span>Room id: </span>
+            <span id="span-room-id">room_id</span>
           </div>
           <div id="start-button" class="button">
-              <span class="start-button-text">Start</span>
+              <span class="start-button-text">Test Room</span>
           </div>
         </div>
       </div>
+
       <div id="splash" style="display: none;">
         <div id="splash-button" class="button">
             <span class="start-button-text">Start your Scape X Mobile Experience</span>
@@ -43,7 +39,9 @@
       </div>
     </div>
   </div>
-  <script type="module" src="./sxmtest/index.js?cache=2"></script>
+
+  <script src="./capore/paho/paho-mqtt.js"></script>
+  <script type="module" src="./sxmtest/sxmtest.js?cache=2"></script>
 </body>
 
 </html>
