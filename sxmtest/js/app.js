@@ -1,7 +1,7 @@
 class App {
-    constructor(capore) {
-        this.capore = capore;
-        this.capore.registerCallback(this);
+    constructor(session) {
+        this.session = session;
+        this.session.registerCallback(this);
         this.displayName = "";
         this.appRoot = document.getElementById('app');
         this.startButton = document.getElementById('start-button');
@@ -31,13 +31,13 @@ class App {
         if (this.sxmInitialized)
             return;
         this.sxmInitialized = true;
-        this.capore.connect();
+        this.session.connect();
         setInterval(() => {
-            let moving = this.capore.device.isMoving();
-            let tilted = this.capore.device.isTilted();
+            let moving = this.session.device.isMoving();
+            let tilted = this.session.device.isTilted();
             let sensorIcon = document.getElementById("sensorIcon");
             sensorIcon.classList.add("show");
-            if (this.capore.device.joined) {
+            if (this.session.device.joined) {
                 if (moving) {
                     if (sensorIcon.innerHTML != "vibration")
                         sensorIcon.innerHTML = "vibration";

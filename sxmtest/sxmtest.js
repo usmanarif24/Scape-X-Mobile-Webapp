@@ -1,9 +1,9 @@
-import { Capore } from "../capore/capore.js";
+import { SxmSession } from "../sxm/sxmsession.js";
 import { App } from "./js/app.js";
 function startApp() {
-    let capore = new Capore();
-    let app = new App(capore);
+    let session = new SxmSession();
+    let app = new App(session);
     let roomIdElement = document.getElementById("span-room-id");
-    roomIdElement.innerHTML = capore.room_uuid;
+    roomIdElement.innerHTML = session.room_uuid;
 }
 startApp();
