@@ -8,14 +8,14 @@ class App {
         this.startButton.addEventListener("click", () => {
             this.initSXM();
         });
-        if (this.getMobileOS() == 'iOS') {
-            document.getElementById('splash').style.display = "block";
-        }
-        else {
-            document.addEventListener("click", () => {
-                this.initSXM();
-            });
-        }
+        // if (this.getMobileOS() == 'iOS') {
+        //     document.getElementById('splash').style.display = "block";
+        // }
+        // else {
+        //     document.addEventListener("click", () => {
+        //         this.initSXM();
+        //     });
+        // }
     }
     getMobileOS() {
         const ua = navigator.userAgent;
