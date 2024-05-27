@@ -1,14 +1,17 @@
+import { SxmSession } from "../../sxm/session.js";
+
 class App {
-    constructor(session) {
-        this.session = session;
+    constructor() {
+        this.session = new SxmSession();
         this.session.registerCallback(this);
+        let roomIdElement = document.getElementById("span-room-id");
+        roomIdElement.innerHTML = this.session.room_uuid;
         this.displayName = "";
         this.appRoot = document.getElementById('app');
         this.startButton = document.getElementById('start-button');
         this.startButton.addEventListener("click", () => {
             this.initSXM();
         });
-
     }
 
     initSXM() {
