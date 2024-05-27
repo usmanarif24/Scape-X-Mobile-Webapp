@@ -35,9 +35,9 @@ class Capore {
             }
         });
         this.capore_id = this.room_uuid;
-        if (!this.scape_x_server_url.endsWith("/")) {
-            this.scape_x_server_url += "/";
-        }
+        // if (!this.scape_x_server_url.endsWith("/")) {
+        //     this.scape_x_server_url += "/";
+        // }
         if (!this.scape_x_server_url.startsWith("wss")) {
             this.scape_x_server_url = "wss://" + this.scape_x_server_url;
         }
