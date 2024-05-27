@@ -1,4 +1,4 @@
-import { SxmSession } from "../sxm/sxmsession.js";
+import { SxmSession } from "../sxm/session.js";
 import { App } from "./js/app.js";
 function startApp() {
     let session = new SxmSession();
