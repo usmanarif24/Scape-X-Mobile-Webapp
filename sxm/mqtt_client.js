@@ -6,7 +6,7 @@ class MqttClient {
         this.onConnectedCallbacks = [];
         this.onDisconnectedCallbacks = [];
         this.open = false;
-        this.mqtt_client = new Paho.MQTT.Client(address, clientId);
+        this.mqtt_client = new Paho.Client(address, clientId);
         this.mqtt_client.onMessageArrived = (msg) => this.onMessageArrived(msg);
         this.mqtt_client.onConnected = (reconnect, host) => this.onConnected(reconnect, host);
         this.mqtt_client.onConnectionLost = (response) => {
@@ -83,7 +83,7 @@ class MqttClient {
             this.mqtt_client.send("sxm/" + topic, message, qos, retained);
         }
         else {
-            let mqtt_message = new Paho.MQTT.Message(message);
+            let mqtt_message = new Paho.Message(message);
             mqtt_message.destinationName = topic;
             mqtt_message.qos = qos;
             mqtt_message.retained = retained;
