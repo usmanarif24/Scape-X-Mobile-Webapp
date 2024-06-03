@@ -17,7 +17,7 @@ class SxmSession {
         var urlVars = urlString.split('&');
         this.scape_x_server_url = null;
         this.room_uuid = (!!room_uuid) ? room_uuid : "room_uuid";
-        this.scape_x_server_url = "wss://broker.hivemq.com:8884/mqtt";
+        this.scape_x_server_url = "wss://broker.hivemq.com:8884";
         urlVars.forEach(param => {
             var [key, value] = decodeURI(param).split("=");
             switch (key) {
