@@ -1,11 +1,8 @@
-import { SxmSession } from "../../sxm/session.js";
-
 class App {
     constructor() {
-        this.session = new SxmSession();
-        this.session.registerCallback(this);
+        this.session = new SxmWeb.SxmSession();
         let roomIdElement = document.getElementById("span-room-id");
-        roomIdElement.innerHTML = this.session.room_uuid;
+        roomIdElement.innerHTML = this.session.roomId;
         this.displayName = "";
         this.appRoot = document.getElementById('app');
         this.startButton = document.getElementById('start-button');
@@ -18,7 +15,7 @@ class App {
         if (this.sxmInitialized)
             return;
         this.sxmInitialized = true;
-        this.session.connect();
+        this.session.start();
         setInterval(() => {
             let moving = this.session.device.isMoving();
             let tilted = this.session.device.isTilted();
