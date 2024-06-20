@@ -1,8 +1,6 @@
 class App {
     constructor() {
-        this.session = new SxmWeb.SxmSession();
-        let roomIdElement = document.getElementById("span-room-id");
-        roomIdElement.innerHTML = this.session.roomId;
+
         this.displayName = "";
         this.appRoot = document.getElementById('app');
         this.startButton = document.getElementById('start-button');
@@ -15,6 +13,9 @@ class App {
         if (this.sxmInitialized)
             return;
         this.sxmInitialized = true;
+        this.session = new SxmWeb.SxmSession();
+        let roomIdElement = document.getElementById("span-room-id");
+        roomIdElement.innerHTML = this.session.roomId;
         this.session.start();
         setInterval(() => {
             let moving = this.session.device.isMoving();
