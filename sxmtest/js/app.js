@@ -25,31 +25,31 @@ class App {
     updateMotionIcons() {
         let moving = this.session.device.isMoving;
         let tilted = this.session.device.isTilted;
-        let sensorIcon = document.getElementById("sensorIcon");
-        sensorIcon.classList.add("show");
+        let motionIcon = document.getElementById("motionIcon");
+        motionIcon.classList.add("show");
         if (this.session.device.joined) {
             if (moving) {
-                if (sensorIcon.innerHTML != "vibration")
-                    sensorIcon.innerHTML = "vibration";
+                if (motionIcon.innerHTML != "vibration")
+                    motionIcon.innerHTML = "vibration";
             }
             else {
-                if (sensorIcon.innerHTML != "smartphone")
-                    sensorIcon.innerHTML = "smartphone";
+                if (motionIcon.innerHTML != "smartphone")
+                    motionIcon.innerHTML = "smartphone";
             }
-            let sensorIcon2 = document.getElementById("sensorIcon2");
-            sensorIcon2.classList.add("show");
+            let tiltIcon = document.getElementById("tiltIcon");
+            tiltIcon.classList.add("show");
             if (tilted) {
-                if (sensorIcon2.innerHTML != "north_east")
-                    sensorIcon2.innerHTML = "north_east";
+                if (tiltIcon.innerHTML != "north_east")
+                    tiltIcon.innerHTML = "north_east";
             }
             else {
-                if (sensorIcon2.innerHTML != "horizontal_rule")
-                    sensorIcon2.innerHTML = "horizontal_rule";
+                if (tiltIcon.innerHTML != "horizontal_rule")
+                    tiltIcon.innerHTML = "horizontal_rule";
             }
         }
         else {
-            if (sensorIcon.innerHTML != "no_cell")
-                sensorIcon.innerHTML = "no_cell";
+            if (motionIcon.innerHTML != "no_cell")
+                motionIcon.innerHTML = "no_cell";
         }
     }
 }
