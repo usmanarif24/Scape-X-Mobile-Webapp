@@ -48,13 +48,6 @@ class App {
             }
         }, 250);
     }
-    onStart(message) {
-    }
-    onShutdown(message) {
-    }
-    onDown(message) {
-    }
-    onUp(message) {
-    }
+
 }
 export { App };
