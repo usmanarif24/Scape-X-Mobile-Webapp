@@ -1,10 +1,8 @@
 class App {
     constructor() {
-        this.displayName = "";
         this.session = new SxmWeb.SxmSession();
         let roomIdElement = document.getElementById("span-room-id");
         roomIdElement.innerHTML = this.session.roomId;
-        this.appRoot = document.getElementById('app');
         this.startButton = document.getElementById('start-button');
         this.startButton.addEventListener("click", () => {
             this.initSXM();
