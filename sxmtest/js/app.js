@@ -1,6 +1,9 @@
 class App {
     constructor() {
         this.displayName = "";
+        this.session = new SxmWeb.SxmSession();
+        let roomIdElement = document.getElementById("span-room-id");
+        roomIdElement.innerHTML = this.session.roomId;
         this.appRoot = document.getElementById('app');
         this.startButton = document.getElementById('start-button');
         this.startButton.addEventListener("click", () => {
@@ -12,9 +15,6 @@ class App {
         if (this.sxmInitialized)
             return;
         this.sxmInitialized = true;
-        this.session = new SxmWeb.SxmSession();
-        let roomIdElement = document.getElementById("span-room-id");
-        roomIdElement.innerHTML = this.session.roomId;
         this.session.start();
         setInterval(() => {
             this.updateMotionIcons();
