@@ -18,8 +18,8 @@ class App {
         roomIdElement.innerHTML = this.session.roomId;
         this.session.start();
         setInterval(() => {
-            let moving = this.session.device.isMoving();
-            let tilted = this.session.device.isTilted();
+            let moving = this.session.device.isMoving;
+            let tilted = this.session.device.isTilted;
             let sensorIcon = document.getElementById("sensorIcon");
             sensorIcon.classList.add("show");
             if (this.session.device.joined) {
