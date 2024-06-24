@@ -54,7 +54,8 @@ body {
     margin: 20px;
 }
 
-#sensorIcon, #sensorIcon2 {
+#motionIcon,
+#tiltIcon {
     display: none;
 
     position: absolute;
@@ -63,11 +64,12 @@ body {
     right: 20px;
 }
 
-#sensorIcon2 {
+#tiltIcon {
     right: 50px;
 }
 
-#sensorIcon.show, #sensorIcon2.show {
+#motionIcon.show,
+#tiltIcon.show {
     display: block;
 }
 
@@ -135,7 +137,8 @@ body {
 }
 
 
-.button, button {
+.button,
+button {
     border: 2px solid #000;
     background: #fff;
     color: #000;
@@ -153,7 +156,8 @@ body {
     justify-content: center;
 }
 
-.button:hover, button:hover {
+.button:hover,
+button:hover {
     background: #000;
     color: #fff;
 }
