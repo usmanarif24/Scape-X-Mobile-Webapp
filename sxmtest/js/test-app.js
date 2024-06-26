@@ -1,4 +1,4 @@
-class App {
+class TestApp {
     constructor() {
         this.session = new SxmWeb.SxmSession();
         let roomIdElement = document.getElementById("span-room-id");
@@ -50,4 +50,4 @@ class App {
         }
     }
 }
-export { App };
+export { TestApp };
