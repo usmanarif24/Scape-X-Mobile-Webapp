@@ -127,11 +127,16 @@ body {
     justify-content: center;
 }
 
-#span-room-id,
-#span-device-id {
+#span-room-id {
     margin-left: 5px;
     font-family: "Consolas", Courier, monospace;
     font-size: 0.8em;
+}
+
+#span-device-id {
+    margin-left: 5px;
+    font-family: "Consolas", Courier, monospace;
+    font-size: 0.4em;
 }
 
 
@@ -200,10 +205,6 @@ button:hover {
     font-weight: bold;
     text-align: center;
     line-height: 1;
-}
-
-#room-test {
-    gap: 50px;
 }
 
 form {
