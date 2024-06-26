@@ -127,8 +127,11 @@ body {
     justify-content: center;
 }
 
-#span-room-id {
+#span-room-id,
+#span-device-id {
     margin-left: 5px;
+    font-family: "Consolas", Courier, monospace;
+    font-size: 0.8em;
 }
 
 
