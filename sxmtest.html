@@ -1,52 +1,53 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0"
+    />
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
 
-<head>
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-  <link href="favicon.png" rel="shortcut icon" type="image/x-icon">
-  <link rel="stylesheet" href="css/fonts.css" />
-  <link rel="stylesheet" href="css/app.css" />
-</head>
+  <body>
+    <div id="wrapper">
+      <div id="logo">
+        <a href="https://elementz-group.com/" target="_blank">
+          <img src="images/elementz-logo.png" />
+        </a>
 
-<body>
-  <div id="wrapper">
-    <div id="logo">
-      <a href="https://www.interactive-scape.com" target="_blank">
-        <img src="images/logo.svg" />
-      </a>
-
-      <span id="motionIcon" class="mi"></span>
-      <span id="tiltIcon" class="mi"></span>
-    </div>
-    <div id="content">
-      <div id="app">
-        <div class="content-view show">
-          <span class="sxm-test-title">Scape X Mobile</span>
-          <div class="centered">
-            <span>Room ID: </span>
-          </div>
-          <div class="centered">
-            <span id="span-room-id">room_id</span>
-          </div>
-          <div class="centered">
-            <span>Device ID: </span>
-          </div>
-          <div class="centered">
-            <span id="span-device-id">device_id</span>
-          </div>
-          <div id="start-button" class="button">
-            <span class="start-button-text">Test Room</span>
+        <span id="motionIcon" class="mi"></span>
+        <span id="tiltIcon" class="mi"></span>
+      </div>
+      <div id="content">
+        <div id="app">
+          <div class="content-view show">
+            <span class="sxm-test-title">Scape X Mobile</span>
+            <div class="centered">
+              <span>Room ID: </span>
+            </div>
+            <div class="centered">
+              <span id="span-room-id">room_id</span>
+            </div>
+            <div class="centered">
+              <span>Device ID: </span>
+            </div>
+            <div class="centered">
+              <span id="span-device-id">device_id</span>
+            </div>
+            <div id="start-button" class="button">
+              <span class="start-button-text">Test Room</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/sxm-web@0.1.6/dist/sxm-web.iife.min.js"></script>
-  <script type="module">
-    import { TestApp } from "./js/test-app.js";
-    new TestApp();
-  </script>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/sxm-web@0.1.6/dist/sxm-web.iife.min.js"></script>
+    <script type="module">
+      import { TestApp } from "./js/test-app.js";
+      new TestApp();
+    </script>
+  </body>
 </html>

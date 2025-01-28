@@ -1,44 +1,48 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0"
+    />
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
 
-<head>
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-  <link href="favicon.png" rel="shortcut icon" type="image/x-icon">
-  <link rel="stylesheet" href="css/fonts.css" />
-  <link rel="stylesheet" href="css/app.css" />
-</head>
+  <body>
+    <div id="wrapper">
+      <div id="logo">
+        <a href="https://www.interactive-scape.com" target="_blank">
+          <img src="images/elementz-logo.png" />
+        </a>
 
-<body>
-  <div id="wrapper">
-    <div id="logo">
-      <a href="https://www.interactive-scape.com" target="_blank">
-        <img src="images/logo.svg" />
-      </a>
+        <span id="sensorIcon" class="mi"></span>
+        <span id="sensorIcon2" class="mi"></span>
+      </div>
+      <div id="content">
+        <div id="app">
+          <div id="room-test" class="content-view show">
+            <span class="sxm-test-title">Scape X Mobile - Elementz</span>
 
-      <span id="sensorIcon" class="mi"></span>
-      <span id="sensorIcon2" class="mi"></span>
-    </div>
-    <div id="content">
-      <div id="app">
-        <div id="room-test" class="content-view show">
-          <span class="sxm-test-title">Scape X Mobile</span>
-
-          <div class="centered">
-            <form>
-              <label class="input-label">
-                Enter test room
-              </label>
-              <input id="room_id_input" class="room-input" type="text" value="sxmtest" />
-            </form>
-          </div>
-          <div id="start-button" class="button">
-            <a onclick="init()" class="start-button-text">Start</a>
+            <div class="centered">
+              <form>
+                <label class="input-label"> Enter test room </label>
+                <input
+                  id="room_id_input"
+                  class="room-input"
+                  type="text"
+                  value="elementz"
+                />
+              </form>
+            </div>
+            <div id="start-button" class="button">
+              <a onclick="init()" class="start-button-text">Start</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <script src="./js/index.js"></script>
-</body>
-
+    <script src="./js/index.js"></script>
+  </body>
 </html>
