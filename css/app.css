@@ -38,7 +38,7 @@ body {
 }
 
 #logo {
-    height: 12vh;
+    height: 10vh;
 
     display: flex;
     flex-direction: row;
@@ -115,7 +115,7 @@ body {
 }
 
 .centered {
-    background: #fff;
+    /* background: #fff; */
     color: #000;
 
     margin: 0 20px;
@@ -151,7 +151,7 @@ body {
 .button,
 button {
     border: 2px solid #000;
-    background: #fff;
+    /* background: #fff; */
     color: #000;
 
     cursor: pointer;
@@ -202,8 +202,8 @@ button:hover {
 }
 
 .sxm-test-title {
-    color: #000;
-    font-family: 'Calibre';
+    color: white;
+    font-family: 'Fontin_SC';
     font-size: 3rem;
     font-weight: bold;
     text-align: center;

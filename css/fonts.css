@@ -19,6 +19,12 @@
 }
 
 @font-face {
+	font-family: 'Fontin_SC';
+	src: url('../fonts/FontinSans_Cyrillic_SC_46b.otf');
+}
+
+
+@font-face {
 	font-family: 'Material Icons';
 	font-style: normal;
 	font-weight: 400;
