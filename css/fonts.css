@@ -42,6 +42,7 @@
 	text-transform: none;
 	letter-spacing: normal;
 	word-wrap: normal;
+	color: white;
 	white-space: nowrap;
 	direction: ltr;
 	/* Support for all WebKit browsers. */
