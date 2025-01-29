@@ -7,7 +7,32 @@ class TestApp {
         roomIdElement.innerHTML = this.session.roomId;
         this.startButton = document.getElementById('start-button');
         this.startButton.addEventListener("click", () => {
-            this.initSXM();
+            //enter input form on html that takes in name and email
+            //if name and email field is full and email is validated then perform the following
+
+            let name = document.getElementById("name").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        
+            if (name === "") {
+              alert("Please enter your name.");
+              return;
+            }
+            else
+            {
+                if (!emailRegex.test(email)) {
+                    alert("Please enter a valid email address.");
+                    return;
+                  }
+                  else
+                  {
+
+                    this.initSXM();
+
+                  }
+            }            
+
+
         });
     }
 
