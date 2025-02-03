@@ -1,10 +1,10 @@
 class TestApp {
   constructor() {
     this.session = new SxmWeb.SxmSession();
-    let roomIdElement = document.getElementById("span-room-id");
-    let deviceIdElement = document.getElementById("span-device-id");
-    deviceIdElement.innerHTML = this.session.deviceId;
-    roomIdElement.innerHTML = this.session.roomId;
+    // let roomIdElement = document.getElementById("span-room-id");
+    // let deviceIdElement = document.getElementById("span-device-id");
+    // deviceIdElement.innerHTML = this.session.deviceId;
+    // roomIdElement.innerHTML = this.session.roomId;
     this.startButton = document.getElementById("start-button");
     this.startButton.addEventListener("click", () => {
       //enter input form on html that takes in name and email
