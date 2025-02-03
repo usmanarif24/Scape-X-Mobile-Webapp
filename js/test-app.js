@@ -22,16 +22,16 @@ class TestApp {
           alert("Please enter a valid email address.");
           return;
         } else {
-          this.initSXM();
+          this.initSXM({ name, email });
         }
       }
     });
   }
 
-  initSXM() {
+  initSXM(data) {
     if (this.sxmInitialized) return;
     this.sxmInitialized = true;
-    this.session.start();
+    this.session.start(data);
     setInterval(() => {
       this.updateMotionIcons();
     }, 250);
