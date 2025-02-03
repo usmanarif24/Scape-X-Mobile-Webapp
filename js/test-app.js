@@ -7,9 +7,6 @@ class TestApp {
     // roomIdElement.innerHTML = this.session.roomId;
     this.startButton = document.getElementById("start-button");
     this.startButton.addEventListener("click", () => {
-      //enter input form on html that takes in name and email
-      //if name and email field is full and email is validated then perform the following
-
       let name = document.getElementById("name").value.trim();
       let email = document.getElementById("email").value.trim();
       let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -24,9 +21,20 @@ class TestApp {
           return;
         } else {
           this.initSXM({ name, email });
+          this.updateUIForSession();
         }
       }
     });
+  }
+
+  updateUIForSession() {
+    // Hide the app div and show the session message
+    document.getElementById("app").style.display = "none";
+
+    const messageDiv = document.createElement("div");
+    messageDiv.id = "session-message";
+    messageDiv.textContent = "Place your phone on the table";
+    document.getElementById("content").appendChild(messageDiv);
   }
 
   initSXM(data) {

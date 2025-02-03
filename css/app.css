@@ -47,7 +47,14 @@ body, html {
     animation: bounce 1.5s infinite alternate;
 } */
 
+#session-message {
+    color: #0081bf;
+    font-size: 24px;
+    font-family: 'Fontin_SC';
+    margin-top: 20px;
+    text-align: center;
 
+  }
 
 @keyframes bounce {
     0% {
@@ -73,8 +80,8 @@ body, html {
 
     /* position: absolute; */
     /* top: 30%; */
-    /* transform: translateY(-50%); */
-    /* right: 20px; */
+    /* transform: translateY(-50%);
+    right: 20px; */
 }
 
 #tiltIcon {
