@@ -14,6 +14,7 @@ class TestApp {
       let email = document.getElementById("email").value.trim();
       let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+      console.log({ name, email });
       if (name === "") {
         alert("Please enter your name.");
         return;
