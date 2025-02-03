@@ -1,0 +1,212 @@
+html {
+    font-family: Calibre;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #000;
+    box-sizing: border-box;
+
+    width: 100%;
+    height: 100vh;
+    height: -webkit-fill-available;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+
+    height: 100vh;
+    height: -webkit-fill-available;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+    min-height: -webkit-fill-available;
+}
+
+#logo {
+    height: 12vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+
+    flex-grow: 0;
+
+    position: relative;
+}
+
+#logo a {
+    display: flex;
+}
+
+#logo img {
+    margin: 20px;
+}
+
+#motionIcon,
+#tiltIcon {
+    display: none;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+}
+
+#tiltIcon {
+    right: 50px;
+}
+
+#motionIcon.show,
+#tiltIcon.show {
+    display: block;
+}
+
+#content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    width: 100%;
+    height: 100%;
+}
+
+#app {
+    flex-grow: 1;
+    overflow-y: auto;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#splash {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-label {
+    font-family: 'Calibre';
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.centered {
+    background: #fff;
+    color: #000;
+
+    margin: 0 20px;
+
+    font-family: 'Calibre';
+    font-size: 2rem;
+    font-weight: bold;
+
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#span-room-id {
+    margin-left: 5px;
+    font-family: "Consolas", Courier, monospace;
+    font-size: 0.8em;
+}
+
+#span-device-id {
+    margin-left: 5px;
+    font-family: "Consolas", Courier, monospace;
+    font-size: 0.4em;
+}
+
+
+#start-button {
+    margin: 40px 40px;
+}
+
+
+.button,
+button {
+    border: 2px solid #000;
+    background: #fff;
+    color: #000;
+
+    cursor: pointer;
+    margin: 0 20px;
+
+    font-family: 'Calibre';
+    font-size: 2rem;
+    font-weight: bold;
+
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button:hover,
+button:hover {
+    background: #000;
+    color: #fff;
+}
+
+.content-view {
+    position: absolute;
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+
+    opacity: 0;
+    transition: opacity 0.5s;
+
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+}
+
+.content-view.show {
+    opacity: 1;
+}
+
+.room-input {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-width: 2px;
+}
+
+.sxm-test-title {
+    color: #000;
+    font-family: 'Calibre';
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+}
+
+form {
+    text-align: center;
+}
