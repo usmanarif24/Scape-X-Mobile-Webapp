@@ -38,10 +38,10 @@ class TestApp {
   }
 
   initSXM(data) {
-    console.log("working", data);
     if (this.sxmInitialized) return;
     this.sxmInitialized = true;
     this.session.start(200, data);
+    console.log("working", data);
     setInterval(() => {
       this.updateMotionIcons();
     }, 250);
